@@ -1,0 +1,5 @@
+1. Usar TypeScript y definir una clase como Serie permite trabajar con tipos de datos estrictos, lo que reduce errores en el desarrollo. A diferencia de JavaScript puro, donde se pueden usar objetos con tipo any, TypeScript garantiza que todos los objetos tengan la misma estructura y tipos correctos (por ejemplo, que seasons sea un número). Esto facilita la detección de errores en tiempo de compilación, mejora la legibilidad del código y hace que sea más fácil de mantener y escalar.
+
+2. Es recomendable usar let para el acumulador porque su valor cambia durante la ejecución al ir sumando las temporadas. En cambio, el arreglo de datos debe declararse con const porque no cambia su referencia, es decir, no se reasigna. Esto mejora la seguridad del código y evita modificaciones accidentales.
+
+3. Si se intenta asignar el valor "cinco" al atributo seasons, TypeScript generará un error en tiempo de compilación, ya que ese atributo está definido como tipo number. Esto evita que el programa se ejecute con datos incorrectos y ayuda a detectar errores antes de que ocurran en producción.
